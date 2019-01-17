@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		BE18DB7121ED2090002CFD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB7021ED2090002CFD41 /* AppDelegate.swift */; };
-		BE18DB7321ED2090002CFD41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB7221ED2090002CFD41 /* ViewController.swift */; };
 		BE18DB7621ED2090002CFD41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE18DB7421ED2090002CFD41 /* Main.storyboard */; };
 		BE18DB7821ED2091002CFD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE18DB7721ED2091002CFD41 /* Assets.xcassets */; };
 		BE18DB7B21ED2091002CFD41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE18DB7921ED2091002CFD41 /* LaunchScreen.storyboard */; };
 		BE18DB8621ED2092002CFD41 /* WSJFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB8521ED2091002CFD41 /* WSJFeedTests.swift */; };
+		BE18DB9321ED2198002CFD41 /* FeedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB9221ED2198002CFD41 /* FeedDetailView.swift */; };
+		BE18DB9521ED224B002CFD41 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB9421ED224B002CFD41 /* FeedCell.swift */; };
+		BE18DB9721ED2A31002CFD41 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB9621ED2A31002CFD41 /* XMLParser.swift */; };
+		BE18DB9921ED4C09002CFD41 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB9821ED4C09002CFD41 /* FeedView.swift */; };
+		BE18DB9F21EE9963002CFD41 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18DB9E21EE9963002CFD41 /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,6 @@
 /* Begin PBXFileReference section */
 		BE18DB6D21ED2090002CFD41 /* WSJFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSJFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE18DB7021ED2090002CFD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE18DB7221ED2090002CFD41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE18DB7521ED2090002CFD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE18DB7721ED2091002CFD41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE18DB7A21ED2091002CFD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		BE18DB8121ED2091002CFD41 /* WSJFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSJFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE18DB8521ED2091002CFD41 /* WSJFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSJFeedTests.swift; sourceTree = "<group>"; };
 		BE18DB8721ED2092002CFD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE18DB9221ED2198002CFD41 /* FeedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailView.swift; sourceTree = "<group>"; };
+		BE18DB9421ED224B002CFD41 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		BE18DB9621ED2A31002CFD41 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		BE18DB9821ED4C09002CFD41 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		BE18DB9E21EE9963002CFD41 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				BE18DB7021ED2090002CFD41 /* AppDelegate.swift */,
-				BE18DB7221ED2090002CFD41 /* ViewController.swift */,
+				BE18DB9821ED4C09002CFD41 /* FeedView.swift */,
+				BE18DB9421ED224B002CFD41 /* FeedCell.swift */,
+				BE18DB9221ED2198002CFD41 /* FeedDetailView.swift */,
+				BE18DB9621ED2A31002CFD41 /* XMLParser.swift */,
+				BE18DB9E21EE9963002CFD41 /* Spinner.swift */,
 				BE18DB7421ED2090002CFD41 /* Main.storyboard */,
 				BE18DB7721ED2091002CFD41 /* Assets.xcassets */,
 				BE18DB7921ED2091002CFD41 /* LaunchScreen.storyboard */,
@@ -197,8 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE18DB7321ED2090002CFD41 /* ViewController.swift in Sources */,
+				BE18DB9921ED4C09002CFD41 /* FeedView.swift in Sources */,
+				BE18DB9521ED224B002CFD41 /* FeedCell.swift in Sources */,
+				BE18DB9F21EE9963002CFD41 /* Spinner.swift in Sources */,
 				BE18DB7121ED2090002CFD41 /* AppDelegate.swift in Sources */,
+				BE18DB9321ED2198002CFD41 /* FeedDetailView.swift in Sources */,
+				BE18DB9721ED2A31002CFD41 /* XMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +376,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ML7S5773S5;
 				INFOPLIST_FILE = WSJFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,6 +385,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.anuradha.WSJFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,7 +395,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ML7S5773S5;
 				INFOPLIST_FILE = WSJFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,6 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.anuradha.WSJFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
